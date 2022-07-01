@@ -1,0 +1,17 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" *ngIf="rol == 'cliente'">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="contracts" *ngIf="rol == 'administrador'">
+      <ion-icon name="document-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="page2" *ngIf="rol == 'cliente'">
+      <ion-icon name="calendar-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button (click)="cerrarCesion()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+

@@ -1,0 +1,15 @@
+ion-toolbar {
+    padding: 1rem 0.3rem;
+    padding-bottom: 0;
+    --background: #FFF7AE;
+  
+    ion-title {
+      font-weight: bold;
+      color: black;
+      font-size: 1.66rem;
+  
+      span {
+        color: #DF2E2E;
+      }
+    }
+}

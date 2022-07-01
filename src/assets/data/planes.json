@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "detalle": "PLAN GPON 25MB"
+    },
+    {
+        "id": 2,
+        "detalle": "PLAN BASIC 30MB"
+    },
+    {
+        "id": 3,
+        "detalle": "PLAN PREMIUM 50MB"
+    },
+    {
+        "id": 4,
+        "detalle": "PLAN GOLD 100MB"
+    }
+]

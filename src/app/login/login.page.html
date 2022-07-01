@@ -1,0 +1,38 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="wrapper">
+    <div class="logo">
+      Fo<span>Red</span>
+    </div>
+    <div class="tag_line">
+      Operador Móvil
+    </div>
+
+    <div class="triangle">
+      <div class="triangle-bottomright"></div>
+      <div class="triangle-right"></div>
+    </div>
+
+    <div class="box">
+      <h2>LOGIN</h2>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input [(ngModel)]="usuario" placeholder="Cedula/RUC/Pasaporte" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="clave" type="password" required></ion-input>
+      </ion-item>
+
+      <div class="btn_div">
+        <button type="submit" class="btn" (click)="acceder()">INGRESAR</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,12 +1,13 @@
 import { HeaderModule } from './../components/header/header.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
 
+import { Page2PageRoutingModule } from './page2-routing.module';
+
+import { Page2Page } from './page2.page';
 
 @NgModule({
   imports: [
@@ -14,8 +15,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     FormsModule,
     IonicModule,
     HeaderModule,
-    HomePageRoutingModule
+    Page2PageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [Page2Page]
 })
-export class HomePageModule {}
+export class Page2PageModule {}

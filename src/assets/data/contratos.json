@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "num_contrato": 66,
+        "identificacion_titular": "1104969231001",
+        "razon_social": "MOROCHO ESPARZA JUAN PABLO",
+        "telefono": "0969407691",
+        "direccion_instal": "CALLE JAZMINES Y ALMENDROS",
+        "plan": {
+            "id": 2,
+            "detalle": "PLAN BASIC 30MB"
+        },
+        "cortesia": false,
+        "nodo": {
+            "id": 1,
+            "nombre_nodo": "YANTZAZA"
+        },
+        "bodega": {
+            "id": 1,
+            "nombre_bodega": "SUCURSAL YANTZAZA"
+        }
+    },
+    {
+        "id": 2,
+        "num_contrato": 67,
+        "identificacion_titular": "1753926150",
+        "razon_social": "PONCE LARA JULEXI JAMILEX",
+        "telefono": "0929873322",
+        "direccion_instal": "CALLE JAZMINES Y ALMENDROS",
+        "plan": {
+            "id": 1,
+            "detalle": "PLAN GPON 25MB"
+        },
+        "cortesia": false,
+        "nodo": {
+            "id": 1,
+            "nombre_nodo": "YANTZAZA"
+        },
+        "bodega": {
+            "id": 1,
+            "nombre_bodega": "SUCURSAL YANTZAZA"
+        }
+    },
+    {
+        "id": 3,
+        "num_contrato": 68,
+        "identificacion_titular": "0705472021001",
+        "razon_social": "PETOLEC",
+        "telefono": "564131",
+        "direccion_instal": "CALLE 16 Y AVDA 17",
+        "plan": {
+            "id": 4,
+            "detalle": "PLAN GOLD 100MB"
+        },
+        "cortesia": false,
+        "nodo": {
+            "id": 3,
+            "nombre_nodo": "NANGARITZA"
+        },
+        "bodega": {
+            "id": 3,
+            "nombre_bodega": "SUCURSAL NANGARITZA"
+        }
+    }
+]

@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <div class="titulo">Mis Facturas</div>
+
+    <h4 class="p-4" style="color: #DF2E2E;">Meses cancelados</h4>
+
+    <ion-row>
+      <ion-col size="4" *ngFor="let item of facturas" class="ion-margin">
+        <ion-card (click)="openDetail(item)">
+          <ion-card-content>
+            <div class="ion-text-end">{{item.numFac}}</div><br>
+            <ion-label style="text-transform: uppercase;">{{item.fechaFac | date: 'MMM, y'}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

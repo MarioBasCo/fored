@@ -1,0 +1,152 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar mode="md">
+    <ion-buttons>
+      <ion-icon name="close" size="large" (click)="cerrarModal()"></ion-icon>
+    </ion-buttons>
+    <ion-title slot="end" class="ion-margin-end">Fo<span>Red</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <div>
+      <h2 class="title">Nuevo Contrato</h2>
+      
+      <form id="form" #formulario="ngForm" (ngSubmit)="guardar()">
+        <div class="form">
+          <h5 class="num">N° Contrato: 0005</h5>
+          <h3>Datos del Titular</h3>
+          <ion-list lines="none" class="ion-text-center">
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Identificación del titular del contrato:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-input type="text" [(ngModel)]="detalle" name="detalle" required></ion-input>
+              </ion-item>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Razón Social del titular:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-input type="text" [(ngModel)]="detalle" name="detalle" required></ion-input>
+              </ion-item>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Número de Teléfono o celular:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-input type="text" [(ngModel)]="detalle" name="detalle" required></ion-input>
+              </ion-item>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Dirección del lugar de instalación:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-textarea rows="4" cols="20"></ion-textarea>
+              </ion-item>
+            </div>
+          </ion-list>
+        </div>
+        
+        <div class="form">
+          <h3>Datos de la instalación</h3>
+          <ion-list lines="none" class="ion-text-center">
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Seleccione el plan:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-select interface="alert" cancelText="Cancelar" okText="Aceptar">
+                  <ion-select-option *ngFor="let item of listaPlanes" [value]="item.id">{{item.detalle}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>¿Es cortesía?</ion-label>
+              <ion-radio-group value="no">
+                <ion-row>
+                  <ion-item lines="none" color="transparent">
+                    <ion-label>Si</ion-label>
+                    <ion-radio slot="start" value="si" class="ion-margin-end"></ion-radio>
+                  </ion-item>
+  
+                  <ion-item lines="none" color="transparent">
+                    <ion-label>No</ion-label>
+                    <ion-radio slot="start" value="no" class="ion-margin-end"></ion-radio>
+                  </ion-item>
+                </ion-row>
+  
+              </ion-radio-group>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Fecha de instalación:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-input type="date" style="text-align: right;"></ion-input>
+              </ion-item>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Nombre de Usuario del equipo:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-input type="text" [(ngModel)]="detalle" name="detalle" required></ion-input>
+              </ion-item>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Contraseña del equipo:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-input type="text" [(ngModel)]="detalle" name="detalle" required></ion-input>
+              </ion-item>
+            </div>
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Nodo de conexión:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-select interface="alert" cancelText="Cancelar" okText="Aceptar">
+                  <ion-select-option *ngFor="let item of listaNodos" [value]="item.id">{{item.nombre_nodo}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </div>
+  
+  
+            <div class="field ion-margin-vertical">
+              <ion-label>
+                Bodega:
+              </ion-label>
+              <ion-item lines="none" class="item-field">
+                <ion-select interface="alert" cancelText="Cancelar" okText="Aceptar">
+                  <ion-select-option *ngFor="let item of listaBodegas" [value]="item.id">{{item.nombre_bodega}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </div>
+          </ion-list>
+        </div>
+
+        <div class="btn_div">
+          <button type="submit" class="btn">GUARDAR</button>
+        </div>
+
+        <!-- <div class="ion-text-center">
+          <ion-button type="submit" color="dark" [disabled]="formulario.invalid">Guardar</ion-button>
+        </div> -->
+      </form>
+    </div>
+  </div>
+</ion-content>

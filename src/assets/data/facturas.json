@@ -1,0 +1,48 @@
+[
+    {
+        "numFac": "000100",
+        "cliente": {
+            "num_contrato": 66,
+            "identificacion_titular": "1104969231001",
+            "razon_social": "MOROCHO ESPARZA JUAN PABLO",
+            "telefono": "0969407691"
+        },
+        "fechaFac": "2022/01/25",
+        "detalleFactura": [
+            {
+                "plan": {
+                    "id": 2,
+                    "detalle": "PLAN BASIC 30MB"
+                },
+                "cantidad": 1,
+                "total": 22
+            }
+        ],
+        "subTotalFac": 22,
+        "ivaFac": 2.64,
+        "totalFac": 24.64
+    },
+    {
+        "numFac": "000306",
+        "cliente": {
+            "num_contrato": 66,
+            "identificacion_titular": "1104969231001",
+            "razon_social": "MOROCHO ESPARZA JUAN PABLO",
+            "telefono": "0969407691"
+        },
+        "fechaFac": "2022/02/27",
+        "detalleFactura": [
+            {
+                "plan": {
+                    "id": 2,
+                    "detalle": "PLAN BASIC 30MB"
+                },
+                "cantidad": 1,
+                "total": 22
+            }
+        ],
+        "subTotalFac": 22,
+        "ivaFac": 2.64,
+        "totalFac": 24.64
+    }
+]

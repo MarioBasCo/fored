@@ -1,0 +1,114 @@
+ion-toolbar {
+    padding: 1rem 0.3rem;
+    padding-bottom: 0;
+    --background: #FFF7AE;
+  
+    ion-title {
+      font-weight: bold;
+      color: black;
+      font-size: 1.66rem;
+  
+      span {
+        color: #DF2E2E;
+      }
+    }
+}
+
+.form {
+    width: 98%;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #F9F9F9; 
+}
+
+.title {
+    text-align: center;
+    color: #DF2E2E;
+    font-weight: 600;
+    font-size: 2em;
+    font-style: oblique;
+}
+
+h3 {
+    color: #297F87;
+}
+
+.num {
+    text-align: end;
+}
+
+ion-list {
+    background: transparent;
+    //transform: translateY(2vh);
+    color: black;
+
+    .field {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        ion-label {
+            text-align: start;
+            margin-bottom: 5px;
+        }
+    
+        .item-field {
+            border: 1px solid #F6D167;
+            border-radius: 10px;
+        }
+
+        ion-select{
+            width: 100%;
+        }
+    } 
+
+    ion-button {
+        width: 30vh;
+        margin: auto;
+    }
+
+    .alignItems {
+        ion-checkbox,
+        ion-note {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        ion-checkbox {
+            margin-right: 1vw;
+            --size: 1.1rem;
+        }
+    }
+
+    ion-col {
+        ion-note {
+            font-size: 0.85rem;
+        }
+    }
+}
+
+.btn_div {
+    display: flex;
+    margin-top: 10px;
+    font-size: 30px;
+    .btn {
+        background-color: #297F87;
+        padding: 15px 60px;
+        color: #FFF;
+        font-weight: 600;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}

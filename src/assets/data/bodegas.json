@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nombre_bodega": "SUCURSAL YANTZAZA"
+    },
+    {
+        "id": 2,
+        "nombre_bodega": "SUCURSAL CENTINELA DEL CÓNDOR"
+    },
+    {
+        "id": 3,
+        "nombre_bodega": "SUCURSAL NANGARITZA"
+    }
+]
